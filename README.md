@@ -13,6 +13,7 @@ Instalación 🔧
 1. Clona el repositorio en tu máquina local:
 
 git clone https://github.com/hollyredfield/Proyecto_consulta_bd_asesoria_energetica.git
+
 2. Abre el archivo consulta.html en tu navegador para ver la interfaz de usuario.
 3. Los datos se cargan desde los archivos JSON proporcionados.
 Uso 🖥️
