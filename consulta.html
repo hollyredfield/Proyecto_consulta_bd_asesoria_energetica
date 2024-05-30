@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Asesoría Energética</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Referencia al archivo CSS personalizado -->
+   
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Asesoría Energética</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="graficas.html">
+                        <button class="btn btn-primary">Ver gráficas</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center"></h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="cif">CIF</label>
+                <input type="text" class="form-control" id="cif" placeholder="Introduce el CIF">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Introduce el Nombre">
+            </div>
+            <div class="form-group">
+                <label for="comercializadora">Comercializadora</label>
+                <input type="text" class="form-control" id="comercializadora" placeholder="Introduce la Comercializadora">
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" id="estado" placeholder="Introduce el Estado">
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+            <button id="showAll" class="btn btn-secondary">Mostrar todo</button>
+        </form>
+
+        <h2 class="mt-5">Resultados de la Consulta</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Comercializadora</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTableBody">
+                <!-- Aquí se insertarán los resultados -->
+            </tbody>
+        </table>
+    </div>
+
+   
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="animation/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráficas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="graficas.css" rel="stylesheet">
+    <style>
+        .chart-container {
+            width: 90%;
+            height: 400px;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chart-container">
+            <canvas id="contratosChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="porcentajesChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="mediaChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="pagadosChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="noPagadosChart"></canvas>
+        </div>
+    </div>
+    <div class="chart-container">
+        <canvas id="estadoChart"></canvas>
+    </div>
+    <script src="js/chart.js"></script>
+</body>
+</html>

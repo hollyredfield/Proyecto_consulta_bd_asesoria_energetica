@@ -1,0 +1,44 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.chart-container {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 2rem;
+    background: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.chart-container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
